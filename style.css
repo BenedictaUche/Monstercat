@@ -1,0 +1,162 @@
+:root {
+    --secondary: #50a584
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url('monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 1.5rem;
+}
+
+.background-poster {
+    background: url('./images/leveldays.jpg');
+    width: 1024px;
+}
+
+.background-page .background-poster {
+    filter: blur(5px) brightness(38%);
+}
+
+.background-poster {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    background-color: #000;
+}
+
+/* Nav bar */
+
+
+body>header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    pointer-events: none;
+}
+
+.nav-content img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-header .nav-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 7%;
+}
+
+
+
+.nav-content button {
+    font-weight: 600;
+    background: transparent;
+    border: solid 1px #F1F1F1;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-flex;
+    position: relative;
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent;
+    /* transition: none; */
+    color: #F1F1F1;
+    font-size: 24px;
+    pointer-events: initial;
+}
+
+.nav-content ul {
+    position: absolute;
+    list-style: none;
+    right: calc(8% - 2px);
+}
+
+.nav-content ul {
+    margin-top: 5%;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.nav-content ul li a i {
+    font-size: 20px;
+}
+
+.nav-content ul li {
+    margin-top: 15px;
+}
+
+.nav-content button i {
+    width: 50px;
+    height: 50px;
+}
+
+/* End of header styling */
+
+/* Article content styling */
+
+article {
+    margin: 5% 8%;
+}
+
+.coverimg img {
+    width: 400px;
+    height: 400px;
+}
+
+.album-cover-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 15%;
+}
+
+.album-cover-div .album-music {
+    margin-top: 10rem;
+}
+
+.album-cover-div .album-music h1 {
+    font-family: 'monumentextended', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 39px;
+    letter-spacing: 5px;
+}
+
+.album-cover-div .album-music p {
+    font-family: 'monumentextended', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.album-button button.listen {
+    background-color: var(--secondary);
+    border: none;
+    width: 50%;
+    height: 50%;
+    color: #fff;
+    font-family: 'monumentextended', sans-serif;
+    text-transform: uppercase;
+}
