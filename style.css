@@ -2,10 +2,10 @@
     --secondary: #50a584
 }
 
-/* @font-face {
+@font-face {
     font-family: MyFont;
     src: url('monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Ultrabold.otf');
-} */
+}
 
 
 * {
@@ -17,27 +17,63 @@
 html {
     scroll-behavior: smooth;
     scroll-padding: 1.5rem;
+    background-color: #000;
+    background-image: url("/images/tile.webp");
 }
 
-.background-poster {
-    background: url('./images/leveldays.jpg');
-    width: 1024px;
+body {
+    box-sizing: border-box;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    color: #F1F1F1;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 14px;
+    z-index: 2;
 }
 
-.background-page .background-poster {
-    filter: blur(5px) brightness(38%);
-}
-
-.background-poster {
+.background-page {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    color: #F1F1F1;
+    font-size: 14px;
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+}
+
+.background-poster {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    color: #F1F1F1;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 102%;
+    height: 102%;
     position: absolute;
     top: -1%;
     left: -1%;
     background-position: center;
     background-size: cover;
     z-index: -1;
-    background-color: #000;
+    filter: blur(5px) brightness(38%);
+    background-image: url('images/leveldays.jpg');
+}
+
+.fade-block {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+    color: #F1F1F1;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
 /* Nav bar */
@@ -118,6 +154,7 @@ body>header {
 
 article {
     margin: 5% 8%;
+
 }
 
 /* album-cover styling */
@@ -151,10 +188,12 @@ article {
     color: var(--secondary);
 }
 
+
+
 .album-cover-div {
     display: flex;
     justify-content: space-between;
-    margin: 10% 10%;
+    margin: 17% 10% 9% 10%;
 }
 
 .album-cover-div .album-music {
@@ -220,3 +259,261 @@ article {
 }
 
 /* End of styling for album-styling section */
+
+
+/* Styling for stream music section */
+.stream {
+    margin: 5% 8%;
+}
+
+.stream p {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'monumentextended', sans-serif;
+}
+
+.stream .table {
+    display: flex;
+    margin-top: 4%;
+}
+
+.stream .table div {
+    border: 1px solid #fff;
+    padding: 2%;
+}
+
+.stream .table div a {
+    color: white;
+    font-size: large;
+}
+
+/* End of styling for stream music section */
+
+/* Styling for track section */
+
+
+.track h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'monumentextended', sans-serif;
+}
+
+.track-contain {
+    margin: 0 2% 0 8%;
+}
+
+.track-table {
+    font-size: 18px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.track-table td {
+    padding: 1rem 0.5rem;
+}
+
+.track-table .music-play {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-weight: 600;
+}
+
+.music-play .btn-play {
+    cursor: pointer;
+}
+
+.track-table .music-play div {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.track-table .music-play div span {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.duration {
+    width: fit-content;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.share-icon {
+    cursor: pointer;
+}
+
+/* Styling for video section */
+.video {
+    margin: 4% 8% 4% 8%;
+}
+
+.video h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'monumentextended', sans-serif;
+    margin-bottom: 3%;
+}
+
+.yt-video {
+    width: 100%;
+    height: 500px;
+}
+
+/* styling for footer */
+.line-top {
+    border: none;
+    height: 1px;
+    background-color: #F1F1F1;
+    margin: 8% 13% 2px 13%;
+}
+
+.line-bottom {
+    border: none;
+    height: 1px;
+    background-color: #F1F1F1;
+    margin: 2px 13% 2px 13%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 10%;
+}
+
+
+.footer .about,
+.terms {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Monstsorat', sans-serif;
+}
+
+.footer .news h2 {
+    text-transform: uppercase;
+    color: #515151;
+    margin-bottom: 7%;
+    font-size: 25px;
+}
+
+.news p {
+    width: 37ch;
+    letter-spacing: 1px;
+    margin-bottom: 10%;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c8c8c8
+}
+
+.footer li {
+    list-style: none;
+    margin-bottom: 3%;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fdfdfd;
+    font-weight: 500;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fdfdfd;
+    flex: 1;
+    font-size: 18px;
+}
+
+
+
+input {
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    font-weight: 400;
+    padding: 3% 2%;
+    cursor: text;
+}
+
+form button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: color 100ms linear, background-color 100ms linear, border-color 100ms linear;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    position: relative;
+    right: 15%;
+}
+
+form button:hover {
+    background-color: #F1F1F1;
+
+}
+
+form button>i:hover {
+    color: #000;
+}
+
+form button i {
+    color: #F1F1F1;
+    font-size: 17px;
+    font-weight: 400;
+    padding: .4rem 1rem;
+}
+
+/* Styling for rights-container section */
+
+.rights-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 13%;
+}
+
+.rights-container p {
+    color: #c4c4c4;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.socialmedia-icons {
+    list-style: none;
+    display: flex;
+
+}
+
+.socialmedia-icons li>a {
+    color: #fdfdfd;
+    font-size: 20px;
+    margin-left: 18px;
+}
+
+/* Styling for the bottom-texts section */
+
+.bottom-texts {
+    margin: 4% 13%;
+    text-align: center;
+    color: #c4c4c4;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.bottom-texts p {
+    width: 130ch;
+    margin-bottom: 3%;
+}
