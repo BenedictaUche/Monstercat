@@ -1,5 +1,21 @@
-const audio = document.getElementById("myAudio");
+const audio = document.querySelector(".audio");
 const listenButton = document.querySelector(".listen");
+const audioTracks = document.querySelectorAll('.audio-track')
+const playButtons = document.querySelectorAll('.btn-play')
+
+playButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        const audioTrack = audioTracks[index];
+        if (audioTrack.paused) {
+            audioTrack.play()
+            button.innerHTML = '<i class="fa-solid fa-pause"></i>'
+        } else {
+            audioTrack.pause()
+            button.innerHTML = '<i class="fa-solid fa-play"></i>'
+        }
+    })
+})
+
 
 listenButton.addEventListener("click", function () {
     if (audio.paused) {
@@ -11,12 +27,11 @@ listenButton.addEventListener("click", function () {
     }
 });
 
-function shareAudio() {
-    const audioSrc = audio.src;
+function shareAudio(songTitle, songUrl) {
     navigator.share({
-        title: "Level Days - Monstercat",
+        title: songTitle,
         text: "Listen to this song I found on my favorite music site",
-        url: audioSrc
+        url: songUrl
     })
         .then(() => console.log("Share successful"))
         .catch(error => console.log("Share failed:", error));
