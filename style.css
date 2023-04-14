@@ -65,8 +65,8 @@ body {
     color: #F1F1F1;
     font-size: 14px;
     box-sizing: border-box;
-    width: 102%;
-    height: 102%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: -1%;
     left: -1%;
@@ -643,6 +643,7 @@ form button i {
     margin: 6% 0;
 }
 
+/* End of sidebar section */
 
 @media (max-width:1184px) {
     .nav-header {
@@ -790,6 +791,109 @@ form button i {
     }
 }
 
+@media (max-width: 560px) {
+    .nav-content ul {
+        display: none;
+    }
+
+    .rights-container {
+        display: flex;
+        flex-direction: column;
+        margin: 4% 4%;
+    }
+
+    .rights-container .rights {
+        margin-bottom: 3%;
+    }
+
+    .socialmedia-icons {
+        flex-wrap: wrap;
+    }
+
+    .bottom-texts {
+        margin: 4% 0;
+        flex-wrap: wrap;
+
+
+    }
+
+    .bottom-texts p {
+        width: 100%;
+        padding: 2% 2%;
+        text-align: center;
+    }
+
+    .bottom-texts span {
+        padding: 2% 3%;
+    }
+
+    .about-content,
+    .terms {
+        font-size: 15px;
+    }
+
+    .terms {
+        margin-bottom: 6%;
+    }
+
+    .news form input {
+        width: 100%;
+    }
+
+    .news form button {
+        position: absolute;
+    }
+
+    .line-top,
+    .line-bottom {
+        width: 90%;
+        margin: 2px 4% 2px;
+    }
+
+    .track-contain {
+        margin: 0 2% 0 2%;
+    }
+
+    .stream {
+        margin: 5% 1%;
+    }
+
+    .stream p {
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    .album-cover-div .album-music {
+        margin-right: 4%;
+        margin-left: 0;
+    }
+
+    .album-cover-div .album-music h1 {
+        font-size: 15px;
+    }
+
+    .coverimg {
+        position: relative;
+    }
+
+    .coverimg .rotate {
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: 0;
+        top: 0;
+        right: 24%;
+        font-size: 18px;
+        letter-spacing: 5%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
 @media (max-width: 532px) {
     .nav-content ul {
         display: none;
@@ -872,12 +976,6 @@ form button i {
         font-size: 15px;
     }
 
-    /* 
-    
-        .coverimg img {
-            width: 400px;
-            height: 400px;
-        } */
     .coverimg {
         position: relative;
     }
@@ -889,13 +987,6 @@ form button i {
         top: 0;
         right: 24%;
         font-size: 18px;
-        font-weight: 400;
-        font-style: italic;
-        color: #f1f1f1;
-        font-family: Montserrat,
-            Helvetica,
-            Arial,
-            sans-serif;
         letter-spacing: 5%;
     }
 
@@ -903,5 +994,63 @@ form button i {
         display: flex;
         flex-direction: column;
     }
+
+}
+
+@media(max-width: 320px) {
+    .background-poster {
+        width: 100%;
+    }
+
+    .album-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .album-button button.listen {
+        margin-bottom: 2%;
+
+    }
+
+    .stream {
+        margin-top: 20%;
+    }
+
+    .track h2 {
+        font-size: 15px;
+    }
+
+    .stream .table {
+        flex-wrap: wrap;
+    }
+
+    .yt-video {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* .album-button button.listen {
+        width: 8rem;
+        height: 4rem;
+        text-align: center;
+
+    }
+
+    .album-button button.share {
+        width: 6rem;
+        height: 4rem;
+        font-size: 18px;
+        margin-left: 3%;
+    }
+        .stream .table {
+            display: flex;
+            margin-top: 4%;
+        }
+    
+        .stream .table div {
+            border: 1px solid #fff;
+            padding: 2%;
+        }
+     */
 
 }
