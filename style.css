@@ -872,21 +872,30 @@ form button i {
         font-size: 15px;
     }
 
-    /* .coverimg {
-            position: relative;
-        }
+    /* 
     
         .coverimg img {
             width: 400px;
             height: 400px;
         } */
+    .coverimg {
+        position: relative;
+    }
 
     .coverimg .rotate {
-
-        transform: rotate(-90deg);
+        position: absolute;
+        transform: rotate(90deg);
         bottom: 0;
         top: 0;
         right: 24%;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: #f1f1f1;
+        font-family: Montserrat,
+            Helvetica,
+            Arial,
+            sans-serif;
         letter-spacing: 5%;
     }
 
