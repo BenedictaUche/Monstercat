@@ -36,3 +36,13 @@ function shareAudio(songTitle, songUrl) {
         .then(() => console.log("Share successful"))
         .catch(error => console.log("Share failed:", error));
 }
+
+
+function openNav() {
+    document.querySelector(".sidebar").style.width = "32vw";
+}
+
+function closeNav() {
+    document.querySelector(".sidebar").style.width = "0";
+    document.querySelector(".main-content").style.marginRight = "0";
+}
