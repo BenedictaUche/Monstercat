@@ -16,6 +16,7 @@ playButtons.forEach((button, index) => {
     })
 })
 
+// This will play the song when the listen button is clicked
 
 listenButton.addEventListener("click", function () {
     if (audio.paused) {
@@ -27,6 +28,7 @@ listenButton.addEventListener("click", function () {
     }
 });
 
+// Share functionality using the web share api
 function shareAudio(songTitle, songUrl) {
     navigator.share({
         title: songTitle,
@@ -46,6 +48,7 @@ function closeNav() {
     document.querySelector(".sidebar").style.width = "0";
     document.querySelector(".main-content").style.marginRight = "0";
 }
+
 
 const menuBtn = document.getElementById('music');
 const submenu = document.getElementById('music-show');
