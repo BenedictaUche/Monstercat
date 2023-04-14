@@ -857,6 +857,19 @@ form button i {
 }
 
 @media (max-width: 560px) {
+    .sidebar {
+        width: 80%;
+
+    }
+
+    .sidebar-fixed {
+        width: 100%;
+    }
+
+    .sidebar-header {
+        width: 100%;
+    }
+
     .nav-content ul {
         display: none;
     }
@@ -960,6 +973,16 @@ form button i {
 }
 
 @media (max-width: 532px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar-list ul li a span {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+    }
+
     .nav-content ul {
         display: none;
     }
