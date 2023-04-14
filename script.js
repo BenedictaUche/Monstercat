@@ -46,3 +46,26 @@ function closeNav() {
     document.querySelector(".sidebar").style.width = "0";
     document.querySelector(".main-content").style.marginRight = "0";
 }
+
+const menuBtn = document.getElementById('music');
+const submenu = document.getElementById('music-show');
+const menuBtnTwo = document.getElementById('about');
+const submenuTwo = document.getElementById('about-show');
+const menuBtnThree = document.getElementById('events');
+const submenuThree = document.getElementById('events-show');
+const menuBtnFour = document.getElementById('prog');
+const submenuFour = document.getElementById('prog-show');
+
+menuBtn.addEventListener('click', () => {
+    submenu.classList.toggle('show');
+});
+
+menuBtnTwo.addEventListener('click', () => {
+    submenuTwo.classList.toggle('show');
+});
+menuBtnThree.addEventListener('click', () => {
+    submenuThree.classList.toggle('show');
+});
+menuBtnFour.addEventListener('click', () => {
+    submenuFour.classList.toggle('show');
+});

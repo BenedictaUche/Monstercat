@@ -561,9 +561,17 @@ form button i {
     text-decoration: none;
     font-size: 15px;
     color: #818181;
-    display: block;
+
     transition: 0.3s;
     list-style: none;
+}
+
+.sidebar-list ul .sidebar-music {
+    margin-top: 10%;
+}
+
+.sidebar-list {
+    height: 120vh;
 }
 
 .sidebar-list ul li {
@@ -572,11 +580,58 @@ form button i {
     padding: 10px;
 }
 
-
-.sidebar-list ul li:hover {
-    cursor: pointer;
+.sidebar-list ul li a {
+    position: relative;
+    width: 100%;
+    display: block;
 }
 
+
+.sidebar-list ul li a:hover {
+    cursor: pointer;
+    color: cyan;
+}
+
+.sidebar-list ul .music-show.show {
+    display: block;
+}
+
+.sidebar-list ul .about-show.show {
+    display: block;
+}
+
+.sidebar-list ul .events-show.show {
+    display: block;
+}
+
+.sidebar-list ul .prog-show.show {
+    display: block;
+}
+
+.sidebar-list ul ul {
+    position: static;
+    display: none;
+}
+
+
+
+.sidebar-list ul ul li a {
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.sidebar-list ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+
+.sidebar-list ul li a:hover span {
+    transform: translateY(-50%) rotate(-180deg);
+}
 
 .sidebar .closebtn {
     position: absolute;
@@ -605,14 +660,24 @@ form button i {
     position: fixed;
     background-color: #000;
     width: 32vw;
-    height: 20vh;
+    height: 15vh;
     top: 0;
+}
+
+.sidebar-header h2 {
+    text-align: center;
+    margin-top: 6%;
+    font-size: 26px;
 }
 
 .sidebar-header img {
     height: 60px;
     width: 60px;
+    margin-top: 4%;
 }
+
+
+
 
 .sidebar-fixed {
     position: fixed;
@@ -1028,29 +1093,5 @@ form button i {
         width: 100%;
         height: 500px;
     }
-
-    /* .album-button button.listen {
-        width: 8rem;
-        height: 4rem;
-        text-align: center;
-
-    }
-
-    .album-button button.share {
-        width: 6rem;
-        height: 4rem;
-        font-size: 18px;
-        margin-left: 3%;
-    }
-        .stream .table {
-            display: flex;
-            margin-top: 4%;
-        }
-    
-        .stream .table div {
-            border: 1px solid #fff;
-            padding: 2%;
-        }
-     */
 
 }
